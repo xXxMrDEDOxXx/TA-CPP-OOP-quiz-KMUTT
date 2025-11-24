@@ -9,14 +9,12 @@
 ```cpp
 class Puzzle {
 protected:
-    vector<vector<int>> grid;
+    std::vector<std::vector<int>> grid;
 
 public:
-    Puzzle(const vector<vector<int>>& initialGrid) { 
-        grid = initialGrid;
-    }
-    virtual bool verifySolution() {
-    }
+    Puzzle(const std::vector<std::vector<int>>& initialGrid);
+    virtual ~Puzzle() = default;
+    virtual bool verifySolution();
 };
 
 ```
